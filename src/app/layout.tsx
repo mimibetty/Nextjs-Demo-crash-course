@@ -27,7 +27,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="flex items-center justify-between p-4 bg-foreground text-background">
+          <p>Welcome to my world hehe </p>
+        </header>
+        
         {children}
+        <footer className="bg-slate-900 text-white p-4 text-center">
+            mimibetty 2025
+        </footer>      
       </body>
     </html>
   );

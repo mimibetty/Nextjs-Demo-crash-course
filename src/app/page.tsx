@@ -1,5 +1,6 @@
 import Image from "next/image";
-
+import { Greet } from "./components/greet";
+import { Counter } from "./components/counter";
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -12,6 +13,9 @@ export default function Home() {
           height={38}
           priority
         />
+        <Greet />
+        <Counter />
+
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
@@ -66,7 +70,7 @@ export default function Home() {
             height={16}
           />
           Learn
-        </a>
+        </a>    
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
